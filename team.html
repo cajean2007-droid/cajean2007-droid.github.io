@@ -84,13 +84,13 @@
         
         .team-grid {
             display: grid;
-            gap: 30px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
         }
         
         .team-card {
-            display: flex;
-            gap: 30px;
-            padding: 40px;
+            text-align: center;
+            padding: 50px 30px;
             background: rgba(255,255,255,0.02);
             border: 1px solid rgba(255,255,255,0.05);
             border-radius: 20px;
@@ -101,11 +101,11 @@
         }
         
         .team-avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 16px;
+            width: 160px;
+            height: 160px;
+            border-radius: 20px;
             overflow: hidden;
-            flex-shrink: 0;
+            margin: 0 auto 24px;
         }
         
         .team-avatar img {
@@ -142,8 +142,8 @@
         @media (max-width: 768px) {
             nav { padding: 15px 20px; }
             section { padding: 40px 20px; }
-            .team-card { flex-direction: column; text-align: center; }
-            .team-avatar { margin: 0 auto; }
+            .team-grid { grid-template-columns: 1fr; }
+            .team-avatar { width: 140px; height: 140px; }
         }
     </style>
 </head>
@@ -195,7 +195,7 @@
                 </div>
                 <div class="team-info">
                     <h3>Alex</h3>
-                    <p class="role">VP of AI Engineering / Head of AI Systems</p>
+                    <p class="role">VP of AI Engineering</p>
                     <p class="bio">
                         微软全球资深AI架构师，OpenAI专家，影视行业AI技术指导。
                         负责平台多视图架构与Agent协作产品化落地。
@@ -209,7 +209,7 @@
                 </div>
                 <div class="team-info">
                     <h3>万晨</h3>
-                    <p class="role">Chief Content Officer 首席内容官</p>
+                    <p class="role">Chief Content Officer</p>
                     <p class="bio">
                         英国皇家电影学院NFTS剧作创作专业，前腾讯S级短剧制片人、导演。
                         负责内容工业SOP、项目质量标准与内容生产体系。
@@ -223,11 +223,10 @@
                 </div>
                 <div class="team-info">
                     <h3>柳若昕</h3>
-                    <p class="role">Chief Narrative Architect 首席叙事架构师</p>
+                    <p class="role">Chief Narrative Architect</p>
                     <p class="bio">
                         中央戏剧学院/法国里昂二大双学位。
-                        负责将编剧经验与叙事判断转化为结构化内容规则，
-                        参与剧本算法标注、叙事方法论抽象与评估体系建立。
+                        负责将编剧经验与叙事判断转化为结构化内容规则。
                     </p>
                 </div>
             </div>
